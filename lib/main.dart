@@ -4,6 +4,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_bloc_concept/cubit/counter_cubit.dart';
 
 void main() {
+  const CounterState counterState1 = CounterState(counterValue: 1);
+  const CounterState counterState2 = CounterState(counterValue: 1);
+  print(counterState1 == counterState2);
   runApp(const MyApp());
 }
 
